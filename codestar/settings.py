@@ -84,6 +84,12 @@ DATABASES = {
     dj_database_url.parse(os.environ.get("DATABASE_URL"))
 }
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://*codeanyapp.com",
+    "https://*gitpod.com",
+    "https://*.herokuapp.com"
+]
+
 # DATABASES = {
 #    'default': {
 #        'ENGINE': 'django.db.backends.sqlite3',
